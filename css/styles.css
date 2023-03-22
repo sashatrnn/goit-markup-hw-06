@@ -809,12 +809,15 @@ width: calc((100% - 72px) / 4);
 .modal-group{
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-.modal-group:not(:last-child){
-  margin-bottom:10px;
+.modal-group.com {
+  margin-bottom: 0px;
 }
+/*.modal-group:not(:last-child){
+  margin-bottom: 8px;
+}*/
 
 .modal-input{
   border: 1px solid rgba(46, 47, 66, 0.2);
