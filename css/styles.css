@@ -601,6 +601,7 @@ width: calc((100% - 72px) / 4);
 .container.footer{
   display: flex;
   align-items: flex-start;
+  padding-right: 0px ;
 }
 
 .page-footer{
