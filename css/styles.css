@@ -13,7 +13,7 @@
   --time-distibution: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* General styles */
+/*---------------------- General styles ------------------------ */
 
 *,
 *::before,
@@ -87,7 +87,7 @@ ul {
   border-color: transparent;
 }
 
-/* Header */
+/*------------------- HEADER------------------- */
 
 .page-header{
 /* padding-top: 24px;
@@ -201,7 +201,7 @@ ul {
   color: var(--link-color);
 }
 
-/* hero section */ 
+/*------------------- hero section --------------*/ 
 
 .hero {
   text-align: center;
@@ -268,7 +268,7 @@ ul {
 }
 
 
-/* Strategy section */
+/*-------------------- Strategy section -------------------*/
 
 .feature-section{
   padding-top: 120px;
@@ -321,17 +321,17 @@ width: calc((100% - 72px) / 4);
   padding: 24px 100px;
   margin-bottom: 8px;
 }
-/* Work section */
+/*----------------- Work section -----------------*/
 
 .work-section {
-    text-align: center;
-    padding-top: 0;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--title-text-color);
-    }
+  text-align: center;
+  padding-top: 0;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+}
 
 .work-container{
   display: flex;
@@ -350,7 +350,7 @@ width: calc((100% - 72px) / 4);
     flex-basis: 360px;
   }
 
-/* Team section */
+/*-------------------- Team section ----------------------*/
 
 
 .work-title,
@@ -437,7 +437,7 @@ width: calc((100% - 72px) / 4);
   background-color: var(--link-color);
 }
 
-/* Customers section*/
+/*------------------ Customers section -----------------*/
 
 .customers-section{
  padding: 120px;
@@ -482,7 +482,7 @@ width: calc((100% - 72px) / 4);
   fill: var(--link-color);
 }
 
-/*Section Portfolio*/
+/*-----------------Section Portfolio----------------*/
 
 .portfolio-section {
   padding-top: 96px;
@@ -560,7 +560,7 @@ width: calc((100% - 72px) / 4);
   outline: transparent;
 }
 
- /* overlay */
+ /*-------------- overlay --------------*/
 
 .type {
   position: relative;
@@ -596,7 +596,8 @@ width: calc((100% - 72px) / 4);
 }
 
 
-/* Footer */
+/*-------------------- Footer ----------------------*/
+
 .container.footer{
   display: flex;
   align-items: flex-start;
@@ -703,6 +704,7 @@ width: calc((100% - 72px) / 4);
   padding: 8px 24px;
   margin-left: 24px;
 
+  font-family: inherit;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -729,7 +731,7 @@ width: calc((100% - 72px) / 4);
 }
 
 
-/* MODAL WINDOW */
+/*--------------MODAL WINDOW-------------------- */
 
 .backdrop {
   position: fixed;
@@ -753,9 +755,9 @@ width: calc((100% - 72px) / 4);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   max-width: 408px;
   max-height: 596px;
+
   background-color: var(--modal-bgr);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -778,9 +780,11 @@ width: calc((100% - 72px) / 4);
   align-items: center;
   width: 24px;
   height: 24px;
+
   background: var(--description-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
@@ -813,13 +817,13 @@ width: calc((100% - 72px) / 4);
 }
 
 .modal-input{
-border: 1px solid rgba(46, 47, 66, 0.2);
-border-radius: 4px;
-width: 360px;
-padding: 8px 16px 8px 38px; 
-height: 40px;
-outline: transparent;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  border-radius: 4px;
+  width: 360px;
+  padding: 8px 16px 8px 38px; 
+  height: 40px;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea{
@@ -835,6 +839,7 @@ textarea{
   top: 50%;
   transform: translateY(-50%);
   left: 16px;
+
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -844,8 +849,8 @@ textarea{
   border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   outline: transparent;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-comment::placeholder {
@@ -905,11 +910,11 @@ textarea{
 }
 
 .checkbox-link{
-    align-items: center;
-      font-size: 12px;
-      line-height: 1.333;
-      letter-spacing: 0.04em;
-      color: var(--link-color);
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.333;
+  letter-spacing: 0.04em;
+  color: var(--link-color);
 }
 
 .modal-checkbox-icon{
@@ -935,13 +940,16 @@ textarea{
 .modal-button {
   display: block;
   padding: 16px 32px;
+
+  font-family: inherit;
   font-weight: 500;
-  line-height: 1.5;
-  margin: 0 auto;
-  letter-spacing: 0.04em;
 
   width: 169px;
   height: 56px;
+  margin: 0 auto;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-size: 16px;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
